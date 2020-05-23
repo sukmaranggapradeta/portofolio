@@ -1,5 +1,10 @@
 import React from "react";
-import { Wrapper, FooterSection, CopyRightSection } from "./styles";
+import {
+  Wrapper,
+  FooterSection,
+  FooterLinktSection,
+  CopyRightSection,
+} from "./styles";
 import logoFooter from "img/footer.png";
 import { P1, TitleLink } from "components/typography";
 
