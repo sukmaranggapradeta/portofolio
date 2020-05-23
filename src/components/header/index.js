@@ -1,8 +1,21 @@
 import React from "react";
-import { Wrapper } from "./styles";
+import { Wrapper, Logo, MenuHeader } from "./styles";
+import { H3 } from "components/typography";
 
 function index() {
-  return <Wrapper>Header</Wrapper>;
+  return (
+    <Wrapper>
+      <Logo className="flex-center">
+        <H3 style={{ color: "#ffffff" }}>Sukma Rangga</H3>
+      </Logo>
+      <MenuHeader>
+        <H3 style={{ color: "#ffffff" }}>Home</H3>
+        <H3 style={{ color: "#ffffff" }}>Project</H3>
+        <H3 style={{ color: "#ffffff" }}>About</H3>
+        <H3 style={{ color: "#ffffff" }}>Contact</H3>
+      </MenuHeader>
+    </Wrapper>
+  );
 }
 
 export default index;

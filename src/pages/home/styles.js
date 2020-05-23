@@ -1,13 +1,17 @@
 import styled from "styled-components";
-// import { theme } from "shared";
-// import {
-//   XS_DEVICES_WIDTH,
-//   S_DEVICES_WIDTH,
-//   M_DEVICES_WIDTH,
-//   L_DEVICES_WIDTH,
-//   MAC_DEVICES_WIDTH
-// } from "config/utils/constant";
+import { LARGE, MEDIUM, SMALL } from "global/media-query";
 
 export const Wrapper = styled.div`
-  border: solid black 3px;
+  /* border: solid black 3px; */
+  background-color: #f5f6f7;
+  min-height: 70vh;
+
+  @media (max-width: ${LARGE}) {
+    min-height: 75vh;
+  }
+  @media (max-width: ${MEDIUM}) {
+    min-height: auto;
+  }
+  @media (max-width: ${SMALL}) {
+  }
 `;
