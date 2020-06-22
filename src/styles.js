@@ -3,6 +3,14 @@ import styled from "styled-components";
 // import { LARGE, MEDIUM, SMALL } from "global/media-query";
 
 export const WrapperApp = styled.div`
+  .wrapper-body-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: dashed red 0.5px;
+    padding: 40px 16px 100px 16px;
+    min-height: calc(70vh - 140px);
+  }
+
   .flex-center {
     display: flex;
     justify-content: center;
@@ -14,6 +22,10 @@ export const WrapperApp = styled.div`
   .flex-column {
     display: flex;
     flex-direction: column;
+  }
+
+  .justify-center {
+    justify-content: center;
   }
 
   .flex-row {
@@ -55,5 +67,9 @@ export const WrapperApp = styled.div`
 
   .text-bold {
     font-weight: bold;
+  }
+
+  .mr-16 {
+    margin-right: 16px;
   }
 `;

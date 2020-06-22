@@ -2,7 +2,7 @@ import React from "react";
 import {
   Wrapper,
   FooterSection,
-  FooterLinktSection,
+  // FooterLinktSection,
   CopyRightSection,
 } from "./styles";
 import logoFooter from "img/footer.png";
@@ -58,7 +58,7 @@ function index() {
             <div>
               <h5 className="color-grey text-uppercase">Sharing</h5>
             </div>
-            <div className="flex-wrap">
+            <div className="section-part-footer">
               <FacebookIcon className="footer-icon"></FacebookIcon>
               <WhatsAppIcon className="footer-icon"></WhatsAppIcon>
               <IntagramIcon className="footer-icon"></IntagramIcon>

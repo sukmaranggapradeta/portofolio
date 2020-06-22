@@ -4,7 +4,7 @@ import { XLARGE, LARGE, MEDIUM, SMALL } from "global/media-query";
 
 export const Wrapper = styled.div`
   height: 25vh;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   width: 100%;
   display: flex;
@@ -16,6 +16,12 @@ export const Wrapper = styled.div`
 
   .footer-right {
     width: 70%;
+  }
+
+  .section-part-footer {
+    @media (max-width: ${MEDIUM}) {
+      flex-wrap: wrap;
+    }
   }
 
   .curve-background {
@@ -71,21 +77,30 @@ export const Wrapper = styled.div`
     .footer-right {
       width: 100%;
     }
+
+    .curve-background {
+      margin-top: -4vh;
+    }
   }
 `;
 
 export const FooterSection = styled.div`
   /* border: dashed red 1px; */
   width: 20%;
-  margin-right: 32px;
+  /* margin-right: 32px; */
+  padding: 0 0.5%;
 
   .footer-icon {
-    width: 50px;
+    width: 45px;
     margin: 0 12px 4px 0pc;
+    cursor: pointer;
   }
 
   .footer-icon g {
     fill: #7569de;
+    :hover {
+      fill: #172c41;
+    }
   }
   .footer-icon path {
     /* stroke: #1f2667; */
@@ -93,8 +108,9 @@ export const FooterSection = styled.div`
   }
 
   @media (max-width: ${XLARGE}) {
-    width: 25%;
-    margin-right: 16px;
+    /* width: 20%; */
+    /* margin-right: 16px; */
+    /* padding: 0 0.5%; */
 
     .footer-icon {
       width: 3.472vw;
@@ -108,7 +124,7 @@ export const FooterSection = styled.div`
   @media (max-width: ${MEDIUM}) {
   }
   @media (max-width: ${SMALL}) {
-    width: 50%;
+    width: 49%;
     margin-right: 0px;
 
     .footer-icon {

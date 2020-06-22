@@ -1,6 +1,6 @@
 import React from "react";
 // import H1Style from "./styles/h1";
-// import H2Style from "./styles/h2";
+import H2Style from "./styles/h2";
 import H3Style from "./styles/h3";
 // import H4Style from "./styles/h4";
 // import H5Style from "./styles/h5";
@@ -29,9 +29,9 @@ import TitleLinkStyle from "./styles/title-link";
 // export function H1Klob2(props) {
 //   return <H1Style2 {...props}>{props.children}</H1Style2>;
 // }
-// export function H2Klob(props) {
-//   return <H2Style {...props}>{props.children}</H2Style>;
-// }
+export function H2(props) {
+  return <H2Style {...props}>{props.children}</H2Style>;
+}
 export function H3(props) {
   return <H3Style {...props}>{props.children}</H3Style>;
 }
