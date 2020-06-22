@@ -11,12 +11,12 @@ export const Wrapper = styled.div`
 `;
 
 export const Logo = styled.div`
-  border: dashed red 1px;
+  /* border: dashed red 1px; */
   width: 30%;
 `;
 
 export const MenuHeader = styled.div`
-  border: dashed red 1px;
+  /* border: dashed red 1px; */
   width: 50%;
   justify-content: space-around;
   display: flex;

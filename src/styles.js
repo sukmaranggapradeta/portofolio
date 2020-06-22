@@ -6,7 +6,7 @@ export const WrapperApp = styled.div`
   .wrapper-body-content {
     max-width: 1200px;
     margin: 0 auto;
-    border: dashed red 0.5px;
+    /* border: dashed red 0.5px; */
     padding: 40px 16px 100px 16px;
     min-height: calc(70vh - 140px);
   }
